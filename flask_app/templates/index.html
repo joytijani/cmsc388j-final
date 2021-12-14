@@ -1,0 +1,24 @@
+{% extends "header.html" %}
+{% block style %}
+    <link rel="stylesheet" href="static/styles.css">
+{% endblock %}
+{% block content %}
+<body>
+    <section class="hero text-center text-light">
+        <div class="hero-particles-container">
+            <canvas id="hero-particles"></canvas>
+        </div>
+        <div class="container-sm">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <h1 class="hero-title mt-0">Hey, Welcome to the Portfolio Builder!</h1>
+                    <p class="hero-paragraph">Looking to get started? Click A Button Below to begin!</p>
+                    <div class="d-grid gap-3">
+                        <a class="button button-primary button-wide-mobile" href="{{ url_for('users.register') }}">Register For An Account Here</a>
+                        <a class="button button-primary button-wide-mobile" href="{{ url_for('users.login') }}">Already have an account? Then Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+{% endblock %}
